@@ -18,22 +18,20 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final router = ref.watch(goRouterProvider);
-    // Watch the settings provider
+    // Provider for Settings controller
     final settingsAsync = ref.watch(settingsControllerProvider);
-    // Get the AppSettings object or a default one
     final AppSettings settings = settingsAsync.value ?? const AppSettings();
+
     return ScreenUtilInit(
       designSize: const Size(360, 690),
       minTextAdapt: true,
       builder: (context, child) {
         return MaterialApp.router(
           title: 'Flutter Demo',
-
           themeMode: settings.darkMode ? ThemeMode.dark : ThemeMode.light,
           darkTheme: AppTheme.dark.copyWith(
             textTheme: AppTheme.dark.textTheme.apply(fontFamily: 'Montserrat'),
           ),
-
           debugShowCheckedModeBanner: false,
           theme: AppTheme.light.copyWith(
             textTheme: AppTheme.light.textTheme.apply(fontFamily: 'Montserrat'),

@@ -2,7 +2,7 @@
 
 ![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)  
 ![License](https://img.shields.io/badge/license-MIT-green)  
-![Build](https://img.shields.io/github/actions/workflow/status/Galadima3/status_saver/flutter.yml?branch=main)  
+![Build](https://img.shields.io/github/actions/workflow/status/Galadima3/status_saver/flutter.yml?branch=master)  
 
 ## 🚀 Overview  
 An Android app built with Flutter 💙 that helps users save WhatsApp statuses offline for later viewing. Built with modern Flutter practices using Riverpod for state management, GoRouter for navigation, and a custom design system for a polished UX

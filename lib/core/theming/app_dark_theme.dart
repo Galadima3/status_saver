@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:status_saver/core/theming/app_theme.dart';
 
 class AppDarkTheme {
@@ -13,19 +12,19 @@ class AppDarkTheme {
       useMaterial3: true,
       colorScheme: scheme,
       scaffoldBackgroundColor: scheme.surface,
+      fontFamily: 'Montserrat', 
 
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.black,
         foregroundColor: Colors.white,
-        toolbarHeight: 50.h,
         elevation: 0,
         centerTitle: true,
         iconTheme: const IconThemeData(color: Colors.white),
         actionsIconTheme: const IconThemeData(color: Colors.white),
         titleTextStyle: TextStyle(
           color: Colors.white,
-          fontSize: 20.sp,
-          fontWeight: FontWeight.bold,
+          fontSize: 20,
+          fontFamily: 'Montserrat',
         ),
       ),
 
@@ -35,10 +34,21 @@ class AppDarkTheme {
         type: BottomNavigationBarType.fixed,
         selectedItemColor: scheme.primary,
         unselectedItemColor: scheme.onSurfaceVariant.withValues(alpha: 0.7),
-        selectedLabelStyle: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w700),
-        unselectedLabelStyle: TextStyle(fontSize: 12.sp, fontWeight: FontWeight.w400),
+        selectedLabelStyle: TextStyle(
+          fontSize: 12,
+          color: scheme.primary,
+          fontFamily: 'Montserrat',
+        ),
+        unselectedLabelStyle: TextStyle(
+          fontSize: 12,
+          color: scheme.onSurfaceVariant.withValues(alpha: 0.7),
+          fontFamily: 'Montserrat',
+        ),
         selectedIconTheme: IconThemeData(color: scheme.primary, size: 26),
-        unselectedIconTheme: IconThemeData(color: scheme.onSurfaceVariant.withValues(alpha: 0.7), size: 24),
+        unselectedIconTheme: IconThemeData(
+          color: scheme.onSurfaceVariant..withValues(alpha: 0.7),
+          size: 24,
+        ),
         showSelectedLabels: true,
         showUnselectedLabels: true,
       ),

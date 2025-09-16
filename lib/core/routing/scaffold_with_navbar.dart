@@ -31,7 +31,7 @@ class ScaffoldWithNavBar extends StatelessWidget {
               width: 24.w,
               height: 24.h,
               colorFilter: ColorFilter.mode(
-                navigationShell.currentIndex == 1
+                navigationShell.currentIndex == 0
                     ? Theme.of(context).colorScheme.primary
                     : Theme.of(
                         context,
