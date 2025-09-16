@@ -87,9 +87,9 @@ flutter build apk --release
 
 ## 📸 Screenshots
 
-| Home Screen1 | Home Screen2 | History | Settings |
+| Home Screen A | Home Screen B | History | Settings |
 |-------------|-----------|----------|---------|
-| <img src="screenshots/status1.jpg" width="200"/> | <img src="screenshots/status2.jpg" width="200"/> | <img src="screenshots/saved.jpg" width="200"/> | <img src="screenshots/dark.png" width="200"/> |
+| <img src="screenshots/status1.jpg" width="200"/> | <img src="screenshots/status2.jpg" width="200"/> | <img src="screenshots/saved.jpg" width="200"/> | <img src="screenshots/dark.jpg" width="200"/> |
 ---
 
 ## 🔧 Configuration
