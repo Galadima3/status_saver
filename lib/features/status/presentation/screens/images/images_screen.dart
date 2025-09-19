@@ -23,7 +23,6 @@ class ImagesScreen extends ConsumerWidget {
     WidgetRef ref,
     File file,
   ) async {
-    //DialogHelper.showLoadingDialog(context);
     try {
       final repo = ref.read(statusRepositoryProvider);
       final success = await repo.saveStatus(file);
@@ -40,9 +39,6 @@ class ImagesScreen extends ConsumerWidget {
     } catch (e) {
       if (!context.mounted) return;
       ToastService.showError(context, message: 'Error: ${e.toString()}');
-    } finally {
-      // ignore: use_build_context_synchronously
-      //DialogHelper.dismissLoadingDialog(context);
     }
   }
 
@@ -82,7 +78,7 @@ class ImagesScreen extends ConsumerWidget {
         itemBuilder: (context, index) {
           final file = images[index];
           final savedAsync = ref.watch(savedStatusProvider(file));
-      
+
           return Stack(
             children: [
               Card(
@@ -116,7 +112,7 @@ class ImagesScreen extends ConsumerWidget {
                         onTap: isSaved
                             ? null
                             : () => _handleSaveImages(context, ref, file),
-      
+
                         child: Container(
                           height: 30.h,
                           width: 30.w,
@@ -136,12 +132,13 @@ class ImagesScreen extends ConsumerWidget {
                         ),
                       );
                     },
-                    loading: () =>  SizedBox(
+                    loading: () => SizedBox(
                       height: 30.h,
                       width: 30.w,
                       child: CircularProgressIndicator(strokeWidth: 2),
                     ),
-                    error: (_, __) => const Icon(Icons.error, color: Colors.red),
+                    error: (_, __) =>
+                        const Icon(Icons.error, color: Colors.red),
                   ),
                 ),
               ),
