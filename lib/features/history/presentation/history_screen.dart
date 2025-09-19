@@ -45,7 +45,6 @@ class HistoryScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text(
           'Saved status',
-          // style: TextStyle(fontWeight: FontWeight.w700),
         ),
         centerTitle: true,
       ),

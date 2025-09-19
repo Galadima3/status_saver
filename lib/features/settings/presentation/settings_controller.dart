@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:status_saver/features/settings/models/settings_model.dart';

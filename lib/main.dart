@@ -6,9 +6,6 @@ import 'package:status_saver/core/theming/app_theme.dart';
 import 'package:status_saver/features/settings/models/settings_model.dart';
 import 'package:status_saver/features/settings/presentation/settings_controller.dart';
 
-//TODO:
-// 1. Understand the codebase in-depth
-// 2. Write Article based on this App
 void main() {
   runApp(ProviderScope(child: const MyApp()));
 }

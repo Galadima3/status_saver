@@ -90,11 +90,8 @@ class _ImageDetailScreenState extends ConsumerState<ImageDetailScreen> {
                 _selectedOption =
                     newSelection.isEmpty ? null : newSelection.first;
               });
-
               if (_selectedOption == null) return;
-
               final statusRepo = ref.read(statusRepositoryProvider);
-
               switch (_selectedOption!) {
                 case Options.repost:
                   try {

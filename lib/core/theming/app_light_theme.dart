@@ -13,7 +13,6 @@ class AppLightTheme {
       colorScheme: scheme,
       scaffoldBackgroundColor: Colors.white,
       fontFamily: 'Montserrat',
-
       appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
         foregroundColor: Colors.black,
@@ -24,7 +23,7 @@ class AppLightTheme {
         titleTextStyle: TextStyle(
           color: Colors.black,
           fontSize: 20,
-          fontWeight: FontWeight.w500, 
+          fontWeight: FontWeight.w500,
           fontFamily: 'Montserrat',
         ),
       ),
@@ -37,13 +36,11 @@ class AppLightTheme {
         unselectedItemColor: scheme.onSurfaceVariant.withValues(alpha: 0.7),
         selectedLabelStyle: TextStyle(
           fontSize: 12,
-          //fontWeight: FontWeight.w500,
           color: scheme.primary,
           fontFamily: 'Montserrat',
         ),
         unselectedLabelStyle: TextStyle(
           fontSize: 12,
-          //fontWeight: FontWeight.w400,
           color: scheme.onSurfaceVariant..withValues(alpha: 0.7),
           fontFamily: 'Montserrat',
         ),

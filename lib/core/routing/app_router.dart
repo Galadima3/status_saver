@@ -7,7 +7,7 @@ import 'package:status_saver/core/utils/permission_checker.dart';
 import 'package:status_saver/features/history/presentation/history_screen.dart';
 import 'package:status_saver/features/status/presentation/screens/images/image_detail_screen.dart';
 import 'package:status_saver/features/status/presentation/screens/media_detail_screen.dart';
-import 'package:status_saver/features/status/presentation/screens/permission_screen.dart';
+import 'package:status_saver/core/utils/permission_screen.dart';
 import 'package:status_saver/features/status/presentation/screens/splash_screen.dart';
 import 'package:status_saver/features/status/presentation/screens/status_screen.dart';
 import 'package:status_saver/features/settings/presentation/settings_screen.dart';
@@ -85,7 +85,6 @@ final goRouterProvider = Provider<GoRouter>((ref) {
           return VideoDetailScreen(video: selectedVideo);
         },
       ),
-      // ✅ Unified detail route
       GoRoute(
         path: RoutePaths.mediaDetail,
         builder: (context, state) {

@@ -37,7 +37,6 @@ class _StatusScreenState extends ConsumerState<StatusScreen> {
       appBar: AppBar(
         title: CupertinoSlidingSegmentedControl<String>(
           backgroundColor: segmentedTheme!.backgroundColor,
-          //thumbColor: segmentedTheme!.selectedColor,
           children: {
             'Photos': Container(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -64,8 +63,6 @@ class _StatusScreenState extends ConsumerState<StatusScreen> {
           },
           groupValue: _selectedSegment,
           onValueChanged: (value) => setState(() => _selectedSegment = value!),
-          // backgroundColor: Colors.grey.shade100,
-          // thumbColor: Colors.white,
         ),
         centerTitle: true,
       ),
